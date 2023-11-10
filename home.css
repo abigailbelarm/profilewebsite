@@ -1,0 +1,83 @@
+body {margin: 0;}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+        
+ul.topnav li {float: right;}
+        
+ul.topnav li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    padding: 18px 15px;
+    text-decoration: none;
+}
+        
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+        
+ul.topnav li a.active {background-color: sienna}
+        
+ul.topnav li.right {float: right;}
+        
+@media screen and (max-width: 600px) {
+ul.topnav li.right, 
+ul.topnav li {float: none;}
+}
+       
+@font-face {
+font-family: "Genshin Impact DRIP FONT";
+src: url('Genshin Impact DRIP FONT.ttf');
+}
+
+.navbar-brandname{
+    font-family: Genshin Impact DRIP FONT;
+    display: block;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 18px 25px;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('https://images8.alphacoders.com/113/1138430.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+        
+.info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -40%);
+    text-align: left;
+
+    color: black;
+    font-size: 70px;
+    font-family: 'Viner Hand ITC';
+    background-color: rgba(0, 0, 0, 0);
+    padding: 30px;
+    border-radius: 10px;
+}
+      
+.socmed {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: start;
+    gap:10px;
+    transition: color 0.3s;
+    cursor: pointer;
+    position: absolute;
+    top: 81%;
+    left: 55%;
+    transform: translate(-60%, -40%);
+    text-align: left;
+}
+

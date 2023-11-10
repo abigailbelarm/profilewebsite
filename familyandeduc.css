@@ -1,0 +1,151 @@
+body {margin: 0;}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+ul.topnav li {float: right;}
+          
+ul.topnav li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    padding: 18px 15px;
+    text-decoration: none;
+}
+          
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+          
+ul.topnav li a.active {background-color: sienna}
+          
+ul.topnav li.right {float: right;}
+          
+@media screen and (max-width: 600px) {
+ul.topnav li.right, 
+ul.topnav li {float: none;}
+}
+
+@font-face {
+    font-family: "Genshin Impact DRIP FONT";
+    src: url('Genshin Impact DRIP FONT.ttf');
+}
+
+.navbar-brandname{
+    font-family: Genshin Impact DRIP FONT;
+    display: block;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 18px 25px;
+    text-decoration: none;
+}
+body {
+    background-image: url('https://64.media.tumblr.com/8dcd054a72a42a5e67ef518d10a43afd/2975f4d5e1d8b0c2-49/s540x810/d04a954924671c50c24c610245d269b75fa19e91.gifv');
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    overflow-x: hidden;
+}
+.fam h1{
+    position: absolute;
+    top: 15%;
+    left: 53%;
+    transform: translate(-60%, -40%);
+    text-align: center;
+    color: white;
+    font-size: 40px;         
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+}
+.fpic{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-60%, -40%);
+    text-align: center;
+    float: left;
+    display:inline-flex;
+    column-gap: 190px;           
+}
+.fpic1{
+    position: absolute;
+    top: 120%;
+    left: 55%;
+    transform: translate(-60%, -40%);
+    text-align: center;
+    float: left;
+    display:inline-flex;
+    column-gap: 190px;
+}
+.members p{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Bookman Old Style';
+    text-align: center; 
+    position: relative; 
+    top: 430px; 
+    left: 200px; 
+    float: left;
+    width: 35%;
+    column-gap: 10px;
+}
+.members1 p{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Bookman Old Style';
+    text-align: center; 
+    position: relative; 
+    top: 770px; 
+    left: 200px; 
+    float: left;
+    width: 35%;
+    padding:0;
+}
+.int h2{
+    position: absolute;
+    top: 170%;
+    left: 53%;
+    transform: translate(-60%, -40%);
+    text-align: center;
+    color: white;
+    font-size: 40px;         
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+}
+table{
+    align-items: center;
+    margin:0 auto;
+    position: relative;
+    top: 900px;
+    left: 20px;
+    border: 2px solid cyan;
+    padding: 8px;
+    font-weight: bold;
+    font-family: 'Bookman Old Style';
+    color: white
+}
+table td, .table th{
+    text-align: center;
+    border: 2px solid cyan;
+    padding: 8px;
+    font-family: 'Bookman Old Style';
+    color: white;
+}
+footer{
+    position: absolute;
+    top: 230%;
+    width: 100%;
+    height: 30px; 
+    font-size: 20px;
+    color: white;
+    background: #111;         
+    justify-content: center;
+
+}

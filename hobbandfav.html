@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My First Website</title>
+  <link rel="icon" type="image/x-icon" href="https://i.imgur.com/hXb3YMv.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="hobbandfav.css">
+</head>
+
+<body>
+<ul class="topnav"> 
+    <li><a  href="#space"></a></li>
+    <li><a  href="index.html">Log Out</a></li>
+    <li><a  href="more.html">More</a></li>
+    <li><a  class="active" href="hobbandint.html">Hobbies & Interests</a></li>
+    <li><a  href="familyandeduc.html">Family & Education</a></li>
+    <li><a  href="aboutme.html">About Me</a></li>
+    <li><a  href="home.html">Home</a></li>
+    <a  style = float:left class="navbar-brand"><img src="C:\Users\LENOVO\Downloads\HTML MIDTERMS\pictures\icon.png" width="60" alt="Logo" gap="5px"></a>
+    <a  style = float:left class="navbar-brandname">ABBY'S PERSONAL BLOG</a>
+    </ul>
+
+<div class="info">
+  <h1 style="color: #ffffff;  font-family: Imprint MT Shadow; margin-bottom: -60px;"><u>HOBBIES</u></h1>
+</div>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 9</div>
+    <img src="https://i.imgur.com/wjJ5ynq.jpg" style="width:100%">
+    <div class="text">Listening to music</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 9</div>
+    <img src="https://i.imgur.com/ZSTYMB5.jpg" style="width:100%">
+    <div class="text">Drawing</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 9</div>
+    <img src="https://i.imgur.com/GnISqIR.jpg" style="width:100%">
+    <div class="text">Reading books</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 9</div>
+    <img src="https://i.imgur.com/wmm2KaT.jpg" style="width:100%">
+    <div class="text">Playing Genshin Impact</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 9</div>
+    <img src="https://i.imgur.com/nNE8p7x.jpg" style="width:100%">
+    <div class="text">Taking pictures</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 9</div>
+    <img src="https://i.imgur.com/OPmxpDh.png" style="width:100%">
+    <div class="text">Reading manhwas and manhuas</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 9</div>
+    <img src="https://i.imgur.com/1O4AaF9.jpg" style="width:100%">
+    <div class="text">Watching anime</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 9</div>
+    <img src="https://i.imgur.com/C2QA6tA.jpg" style="width:100%">
+    <div class="text">Sleeping</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 9</div>
+    <img src="https://i.imgur.com/RhqTC1H.jpg" style="width:100%">
+    <div class="text">Biking</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+</div>
+
+<br>
+  
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span> 
+    <span class="dot" onclick="currentSlide(7)"></span> 
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>  
+</div>
+  
+<script>
+let slideIndex = 1;
+  showSlides(slideIndex);
+  
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+  
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+  
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  }
+</script>  
+
+<div class="fav"> 
+  <h2 style="color: #ffffff;  font-family: Imprint MT Shadow; margin-bottom: -60px;"><u>FAVORITES</u></h2>
+</div>
+
+<ul id="rig">
+  <li>
+      <a class="rig-cell">
+          <img class="rig-img" src="https://i.imgur.com/noOSssY.jpg">
+          <span class="rig-overlay"></span>
+          <span class="rig-text">Food</span>
+      </a>
+  </li>
+  <li>
+      <a class="rig-cell">
+          <img class="rig-img" src="https://i.imgur.com/Tqn3mRf.jpg">
+          <span class="rig-overlay"></span>
+          <span class="rig-text">Animal</span>
+      </a>
+  </li>
+  <li>
+    <a class="rig-cell">
+        <img class="rig-img" src="https://i.imgur.com/Z8buM0F.jpg">
+        <span class="rig-overlay"></span>
+        <span class="rig-text">Flower</span>
+    </a>
+</li>
+  <li>
+    <a class="rig-cell">
+        <img class="rig-img" src="https://i.imgur.com/bf00jFM.png">
+        <span class="rig-overlay"></span>
+        <span class="rig-text">Genshin Character</span>
+    </a>
+</li>
+  <li>
+      <a class="rig-cell">
+          <img class="rig-img" src="https://i.imgur.com/0SArfd2.jpg">
+          <span class="rig-overlay"></span>
+          <span class="rig-text">Season</span>
+      </a>
+  </li>
+  <li>
+    <a class="rig-cell">
+        <img class="rig-img" src="https://i.imgur.com/r8AA2CC.jpg">
+        <span class="rig-overlay"></span>
+        <span class="rig-text">Drink</span>
+    </a>
+  </li>
+  <li>
+      <a class="rig-cell">
+          <img class="rig-img" src="https://i.imgur.com/Fc4zBzb.jpg">
+          <span class="rig-overlay"></span>
+          <span class="rig-text">Color</span>
+      </a>
+  </li>
+  <li>
+    <a class="rig-cell">
+        <img class="rig-img" src="https://i.imgur.com/oS3cm6V.jpg">
+        <span class="rig-overlay"></span>
+        <span class="rig-text">Cartoon Movie</span>
+    </a>
+  </li>
+  <li>
+    <a class="rig-cell">
+        <img class="rig-img" src="https://i.imgur.com/7YfYVcH.jpg">
+        <span class="rig-overlay"></span>
+        <span class="rig-text">Scenery</span>
+    </a>
+</li>
+  <li>
+      <a class="rig-cell">
+          <img class="rig-img" src="https://i.imgur.com/YODBy59.jpg">
+          <span class="rig-overlay"></span>
+          <span class="rig-text">Number</span>
+      </a>
+  </li>
+  <li>
+      <a class="rig-cell">
+          <img class="rig-img" src="https://i.imgur.com/gJc2inj.png">
+          <span class="rig-overlay"></span>
+          <span class="rig-text">Sports</span>
+      </a>
+  </li>
+  <li>
+      <a class="rig-cell">
+          <img class="rig-img" src="https://i.imgur.com/m8eGxND.jpg">
+          <span class="rig-overlay"></span>
+          <span class="rig-text">Place to Visit</span>
+      </a>
+  </li>
+</ul>
+</body>
+
+<footer class="ft">
+  <a>Copyright ©&nbsp;2023.All rights reserved.</a>
+</footer>
+</html>
